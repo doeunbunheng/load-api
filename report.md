@@ -1,6 +1,5 @@
-# Week 17 — Loan-default MLflow lifecycle report
+# Week 17 — Loan-default MLflow lifecycle report. whole project stay at my github "https://github.com/doeunbunheng/load-api"
 
-**Project:** `D:\Techpreneur2.0\week17\loan-api`
 **Environment:** Python 3.14.6, MLflow 3.17.2, scikit-learn 1.9.0, pandas 3.0.5, FastAPI/Uvicorn, Windows PowerShell.
 **Tracking store:** `sqlite:///mlflow.db`; artifacts: `./mlartifacts`
 **Experiment:** `loan-default-experiments` (ID 1), batch `20261112T062215Z`
@@ -110,11 +109,17 @@ Three programs were started for Hands-on 1:
 FastAPI resolves the model only through the registry alias:
 
 ```python
-# main.py:53
+# main.py:164
 model_uri = f"models:/{MODEL_NAME}@{MODEL_ALIAS}"
 ```
 
-No local model file or version number is used by the service.
+No local model file or version number is used by the service in this mode.
+
+> **Module 6 update:** `main.py` now defaults to the bundled `model.joblib` when
+> `MLFLOW_TRACKING_URI` is unset or `MODEL_SOURCE=bundle`. Setting
+> `MODEL_SOURCE=mlflow` restores the alias-only behavior described in this
+> section. See `capstone-report.md` for the container, Render, API-key, and
+> rollback evidence.
 
 ### 4.1 MLflow scoring server — valid request
 

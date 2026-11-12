@@ -2,6 +2,10 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
 mlruns/
 mlflow.db
 mlartifacts/

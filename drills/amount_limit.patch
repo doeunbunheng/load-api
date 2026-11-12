@@ -1,0 +1,11 @@
+--- a/main.py
++++ b/main.py
+@@ -32,7 +32,7 @@
+ from loan_features import FEATURE_COLUMNS
+ 
+ BASE_DIR = Path(__file__).resolve().parent
+-MAX_LOAN_AMOUNT_USD = 5000
++MAX_LOAN_AMOUNT_USD = 500
+ LOGGER = logging.getLogger("loan-api")
+ if not LOGGER.handlers:
+     _handler = logging.StreamHandler()

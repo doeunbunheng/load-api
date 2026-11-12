@@ -1,0 +1,50 @@
+{
+  "model_name": "loan-default",
+  "alias": "champion",
+  "version": "1",
+  "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+  "model_family": "logistic_regression",
+  "source": "mlflow-registry",
+  "trained_at": "2026-11-12T07:51:16.200180+00:00",
+  "experiment": "loan-default-experiments",
+  "data_path": "data\\loan_default.csv",
+  "data_sha256": "e27b51fb3cf80638ae191ee0d3285bcfb4927b2f42fe9ceddb69b75103ca183b",
+  "train_rows": 6400,
+  "test_rows": 1600,
+  "metrics": {
+    "accuracy": 0.726875,
+    "precision": 0.4572784810126582,
+    "recall": 0.7545691906005222,
+    "f1": 0.5694581280788177,
+    "roc_auc": 0.818817835236671,
+    "pr_auc": 0.611263978998408,
+    "business_score": 0.6782317066513928
+  },
+  "feature_columns": [
+    "amount_usd",
+    "term_months",
+    "purpose",
+    "annual_income_usd",
+    "credit_score",
+    "existing_debt_usd",
+    "employment_years",
+    "num_late_payments_12m",
+    "age"
+  ],
+  "python_version": "3.14.6",
+  "sklearn_version": "1.9.0",
+  "expected_sample": {
+    "applicant": {
+      "amount_usd": 1500,
+      "term_months": 12,
+      "purpose": "Buy a rice thresher",
+      "annual_income_usd": 9000.0,
+      "credit_score": 640,
+      "existing_debt_usd": 2500.0,
+      "employment_years": 4.5,
+      "num_late_payments_12m": 1,
+      "age": 38
+    },
+    "default_probability": 0.2534030951697195
+  }
+}

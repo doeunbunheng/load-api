@@ -1,0 +1,42 @@
+Module 6 bad-release and rollback drill (local runtime)
+Generated: 2026-11-12T07:47:11.844606+00:00
+
+Good prediction            : 0.2534030951697195
+Bad prediction             : 0.7465969048302805
+Restored prediction        : 0.2534030951697195
+Amount-limit PR test       : FAILED AS EXPECTED
+Scoring PR test            : FAILED AS EXPECTED
+Bad release start -> wrong : 6.25s
+Rollback start -> correct  : 5.884s
+
+Overall                    : PASS
+
+Amount-limit test output tail:
+tests/test_contract.py: 35 warnings
+  C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+  As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+    array.shape = self.shape
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_contract.py::test_loan_amount_limit_is_5000 - assert 500 ==...
+FAILED tests/test_contract.py::test_amount_at_limit_is_accepted - assert 422 ...
+FAILED tests/test_contract.py::test_champion_score_regression - assert 422 ==...
+FAILED tests/test_contract.py::test_worse_credit_score_increases_default_probability
+FAILED tests/test_contract.py::test_prediction_log_redacts_api_key - assert 4...
+
+Scoring test output tail:
+----------------------------- Captured log setup ------------------------------
+INFO     loan-api:main.py:223 startup {"api_key_required": true, "git_sha": "test-sha", "model_source": "bundle", "model_version": "1", "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8"}
+============================== warnings summary ===============================
+tests/test_contract.py: 35 warnings
+  C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+  As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+    array.shape = self.shape
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_contract.py::test_champion_score_regression - assert 0.7465...
+FAILED tests/test_contract.py::test_worse_credit_score_increases_default_probability
+
+Note: the deployed Render timings must be captured separately.

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: load-api
+    runtime: image
+    plan: free
+    region: oregon
+    image:
+      url: ghcr.io/doeunbunheng/load-api:latest
+    healthCheckPath: /health
+    autoDeployTrigger: "off"
+    envVars:
+      - key: MODEL_SOURCE
+        value: bundle
+      - key: API_KEY
+        sync: false

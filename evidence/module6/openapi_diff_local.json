@@ -1,0 +1,48 @@
+{
+  "live_url": "http://127.0.0.1:18000",
+  "contract": "D:\\Techpreneur2.0\\week17\\loan-api\\spec\\module2_contract.json",
+  "expected_paths": {
+    "/health": [
+      "get"
+    ],
+    "/predict": [
+      "post"
+    ]
+  },
+  "actual_paths": {
+    "/health": [
+      "get"
+    ],
+    "/predict": [
+      "post"
+    ]
+  },
+  "missing_paths": [],
+  "extra_paths": [],
+  "method_differences": {},
+  "field_differences": [
+    {
+      "path": "/health",
+      "method": "get",
+      "kind": "response_fields",
+      "missing": [],
+      "extra": [
+        "api_key_required",
+        "git_sha",
+        "model_source"
+      ]
+    }
+  ],
+  "security_schemes": {
+    "X-API-Key": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "X-API-Key"
+    }
+  },
+  "intentional_module6_differences": [
+    "POST /predict declares the X-API-Key security scheme.",
+    "GET /health adds git_sha, model_source, and api_key_required."
+  ],
+  "passed": true
+}

@@ -1,0 +1,31 @@
+{
+  "image": "loan-api:local-final",
+  "checked_at": "2026-11-12T07:49:51.079631+00:00",
+  "image_id": "sha256:c6b0f94919949afa2673731220cc47e3e1e8b23b7d4efac2963af3962f0e1e09",
+  "repo_digests": [
+    "loan-api@sha256:c6b0f94919949afa2673731220cc47e3e1e8b23b7d4efac2963af3962f0e1e09"
+  ],
+  "health": {
+    "status": "ok",
+    "git_sha": "smoke-loan-api-smoke-0ede5fc2",
+    "model_name": "loan-default",
+    "alias": "champion",
+    "version": "1",
+    "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+    "model_source": "bundle",
+    "model_loaded": true,
+    "api_key_required": true
+  },
+  "startup_seconds": 3.141,
+  "predict_without_key_status": 401,
+  "predict_with_key_status": 200,
+  "prediction": {
+    "default_probability": 0.2534030951697195,
+    "model_name": "loan-default",
+    "alias": "champion",
+    "version": "1",
+    "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8"
+  },
+  "container_logs": "INFO:     172.17.0.1:47330 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     172.17.0.1:47344 - \"POST /predict HTTP/1.1\" 401 Unauthorized\nINFO:     172.17.0.1:47354 - \"POST /predict HTTP/1.1\" 200 OK",
+  "passed": true
+}

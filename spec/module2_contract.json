@@ -1,0 +1,43 @@
+{
+  "module": "Module 2 loan-default API contract",
+  "paths": {
+    "/health": {
+      "get": {
+        "response_fields": [
+          "status",
+          "model_name",
+          "alias",
+          "version",
+          "run_id",
+          "model_loaded"
+        ]
+      }
+    },
+    "/predict": {
+      "post": {
+        "request_fields": [
+          "amount_usd",
+          "term_months",
+          "purpose",
+          "annual_income_usd",
+          "credit_score",
+          "existing_debt_usd",
+          "employment_years",
+          "num_late_payments_12m",
+          "age"
+        ],
+        "response_fields": [
+          "default_probability",
+          "model_name",
+          "alias",
+          "version",
+          "run_id"
+        ]
+      }
+    }
+  },
+  "intentional_module6_differences": [
+    "POST /predict declares the X-API-Key security scheme.",
+    "GET /health adds git_sha, model_source, and api_key_required."
+  ]
+}

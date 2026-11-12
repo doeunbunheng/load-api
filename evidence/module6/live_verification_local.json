@@ -1,0 +1,110 @@
+{
+  "live_url": "http://127.0.0.1:18000",
+  "checked_at": "2026-11-12T07:48:12.384898+00:00",
+  "health": {
+    "status": "ok",
+    "git_sha": "local-verify",
+    "model_name": "loan-default",
+    "alias": "champion",
+    "version": "1",
+    "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+    "model_source": "bundle",
+    "model_loaded": true,
+    "api_key_required": true
+  },
+  "cold_start": {
+    "first_attempt_seconds": 0.025,
+    "second_attempt_seconds": 0.013,
+    "attempts": [
+      {
+        "status": 200,
+        "elapsed_seconds": 0.025,
+        "body": {
+          "status": "ok",
+          "git_sha": "local-verify",
+          "model_name": "loan-default",
+          "alias": "champion",
+          "version": "1",
+          "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+          "model_source": "bundle",
+          "model_loaded": true,
+          "api_key_required": true
+        }
+      }
+    ]
+  },
+  "tls": {
+    "https": false
+  },
+  "checks": {
+    "health_public": {
+      "passed": true,
+      "result": {
+        "status": 200,
+        "elapsed_seconds": 0.025,
+        "body": {
+          "status": "ok",
+          "git_sha": "local-verify",
+          "model_name": "loan-default",
+          "alias": "champion",
+          "version": "1",
+          "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+          "model_source": "bundle",
+          "model_loaded": true,
+          "api_key_required": true
+        }
+      }
+    },
+    "health_second_call": {
+      "result": {
+        "status": 200,
+        "elapsed_seconds": 0.013,
+        "body": {
+          "status": "ok",
+          "git_sha": "local-verify",
+          "model_name": "loan-default",
+          "alias": "champion",
+          "version": "1",
+          "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+          "model_source": "bundle",
+          "model_loaded": true,
+          "api_key_required": true
+        }
+      }
+    },
+    "predict_without_key": {
+      "expected_status": 401,
+      "result": {
+        "status": 401,
+        "elapsed_seconds": 0.034,
+        "body": {
+          "detail": "Invalid or missing API key"
+        }
+      }
+    },
+    "predict_with_key": {
+      "result": {
+        "status": 200,
+        "elapsed_seconds": 0.147,
+        "body": {
+          "default_probability": 0.2534030951697195,
+          "model_name": "loan-default",
+          "alias": "champion",
+          "version": "1",
+          "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8"
+        }
+      },
+      "probability": 0.2534030951697195
+    },
+    "predict_with_wrong_key": {
+      "result": {
+        "status": 401,
+        "elapsed_seconds": 0.005,
+        "body": {
+          "detail": "Invalid or missing API key"
+        }
+      }
+    }
+  },
+  "passed": true
+}

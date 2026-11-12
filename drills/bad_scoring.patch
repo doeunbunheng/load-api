@@ -1,0 +1,11 @@
+--- a/main.py
++++ b/main.py
+@@ -269,7 +269,7 @@
+         payload = applicant.model_dump()
+         frame = pd.DataFrame([payload], columns=FEATURE_COLUMNS)
+         output = request.app.state.model.predict(frame)
+-        probability = float(output.iloc[0]["default_probability"])
++        probability = 1.0 - float(output.iloc[0]["default_probability"])
+         info = request.app.state.model_info
+ 
+         record = {
