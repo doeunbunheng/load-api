@@ -1,0 +1,20 @@
+Registered model: loan-default
+Versions        : 2
+Aliases distinct: True
+Descriptions    : all present
+
+Aliases
+  champion   -> v1  run=d400758e6cbe4ed2a0b36d4b85fe32b8
+             Champion: logreg-regularized (logistic_regression). Recall=0.7546, precision=0.4573, ROC-AUC=0.8188, PR-AUC=0.6113. Trained on 6400 applications (batch 20261112T062215Z); MLflow run d400758e6cbe4ed2a0b36d4b85fe32b8.
+  challenger -> v2  run=a9bff6ebe65947babc72b73671e6af7e
+             Challenger: random-forest-shallow (random_forest). Recall=0.7232, precision=0.4556, ROC-AUC=0.8079, PR-AUC=0.5862. Trained on 6400 applications (batch 20261112T062215Z); MLflow run a9bff6ebe65947babc72b73671e6af7e.
+
+Versions
+  v1  aliases=['champion']  run=d400758e6cbe4ed2a0b36d4b85fe32b8
+       tags={'role': 'champion', 'run_id': 'd400758e6cbe4ed2a0b36d4b85fe32b8', 'model_family': 'logistic_regression', 'business_score': '0.6782', 'batch_id': '20261112T062215Z'}
+       description=Champion: logreg-regularized (logistic_regression). Recall=0.7546, precision=0.4573, ROC-AUC=0.8188, PR-AUC=0.6113. Trained on 6400 applications (batch 20261112T062215Z); MLflow run d400758e6cbe4ed2a0b36d4b85fe32b8.
+  v2  aliases=['challenger']  run=a9bff6ebe65947babc72b73671e6af7e
+       tags={'role': 'challenger', 'run_id': 'a9bff6ebe65947babc72b73671e6af7e', 'model_family': 'random_forest', 'business_score': '0.6599', 'batch_id': '20261112T062215Z'}
+       description=Challenger: random-forest-shallow (random_forest). Recall=0.7232, precision=0.4556, ROC-AUC=0.8079, PR-AUC=0.5862. Trained on 6400 applications (batch 20261112T062215Z); MLflow run a9bff6ebe65947babc72b73671e6af7e.
+
+Evidence: D:\Techpreneur2.0\week17\loan-api\evidence\02_registry.json

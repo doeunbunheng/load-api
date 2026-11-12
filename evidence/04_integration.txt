@@ -1,0 +1,18 @@
+Health
+  MLflow scoring server: 200 ''
+  FastAPI             : 200 {'status': 'ok', 'model_name': 'loan-default', 'alias': 'champion', 'version': '1', 'run_id': 'd400758e6cbe4ed2a0b36d4b85fe32b8', 'model_loaded': True}
+
+MLflow valid request
+  status=200 response={'predictions': [{'default_probability': 0.2534030951697195}]}
+
+MLflow signature rejection (missing credit_score)
+  status=400 response={'error_code': 'INVALID_PARAMETER_VALUE', 'message': "Failed to predict data '   amount_usd  term_months  ... num_late_payments_12m  age\n0        1500           12  ...                     1   38\n\n[1 rows x 8 columns]'. \nError: Failed to enforce schema of data '   amount_usd  term_months  ... num_late_payments_12m  age\n0        1500           12  ...                     1   38\n\n[1 rows x 8 columns]' with schema '['amount_usd': long (required), 'term_months': long (required), 'purpose': string (required), 'annual_income_usd': double (required), 'credit_score': long (required), 'existing_debt_usd': double (required), 'employment_years': double (required), 'num_late_payments_12m': long (required), 'age': long (required)]'. Error: Model is missing inputs ['credit_score'].", 'sqlstate': 'KAM01', 'error_class': 'SCHEMA_ENFORCEMENT_FAILED'}
+
+FastAPI prediction
+  status=200 response={'default_probability': 0.2534030951697195, 'model_name': 'loan-default', 'alias': 'champion', 'version': '1', 'run_id': 'd400758e6cbe4ed2a0b36d4b85fe32b8'}
+
+Parity
+  MLflow=0.2534030951697195 FastAPI=0.2534030951697195 diff=0.0
+  same_probability=True
+
+Evidence: D:\Techpreneur2.0\week17\loan-api\evidence\04_integration.json

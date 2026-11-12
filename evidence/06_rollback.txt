@@ -1,0 +1,21 @@
+
+[before rollback (champion alias)]
+  aliases   : {"champion": {"version": "1", "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8"}, "challenger": {"version": "2", "run_id": "a9bff6ebe65947babc72b73671e6af7e"}}
+  /health   : {"status": "ok", "model_name": "loan-default", "alias": "champion", "version": "1", "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8", "model_loaded": true}
+  /predict  : {"default_probability": 0.2534030951697195, "model_name": "loan-default", "alias": "champion", "version": "1", "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8"}
+
+[after moving champion -> v2]
+  aliases   : {"champion": {"version": "2", "run_id": "a9bff6ebe65947babc72b73671e6af7e"}, "challenger": {"version": "2", "run_id": "a9bff6ebe65947babc72b73671e6af7e"}}
+  /health   : {"status": "ok", "model_name": "loan-default", "alias": "champion", "version": "2", "run_id": "a9bff6ebe65947babc72b73671e6af7e", "model_loaded": true}
+  /predict  : {"default_probability": 0.27138532990893294, "model_name": "loan-default", "alias": "champion", "version": "2", "run_id": "a9bff6ebe65947babc72b73671e6af7e"}
+  restarted : stopped=[20344] new_pid=10928
+
+[after moving champion back -> v1]
+  aliases   : {"champion": {"version": "1", "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8"}, "challenger": {"version": "2", "run_id": "a9bff6ebe65947babc72b73671e6af7e"}}
+  /health   : {"status": "ok", "model_name": "loan-default", "alias": "champion", "version": "1", "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8", "model_loaded": true}
+  /predict  : {"default_probability": 0.2534030951697195, "model_name": "loan-default", "alias": "champion", "version": "1", "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8"}
+  restarted : stopped=[10928] new_pid=2812
+
+Forward rollback verified: True
+Restored champion verified: True
+Evidence: D:\Techpreneur2.0\week17\loan-api\evidence\06_rollback.json

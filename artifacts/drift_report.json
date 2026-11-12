@@ -1,0 +1,47 @@
+{
+  "reference_rows": 6400,
+  "production_rows": 1200,
+  "production_source": "production window CSV (production_window.csv)",
+  "champion": "models:/loan-default@champion",
+  "thresholds": {
+    "warning": 0.1,
+    "critical": 0.25,
+    "prediction_warning": 0.1,
+    "prediction_critical": 0.25
+  },
+  "psi": {
+    "amount_usd": 0.1320644888076413,
+    "term_months": 0.0014134423881952782,
+    "annual_income_usd": 0.48883047811334746,
+    "credit_score": 0.8287576237960441,
+    "existing_debt_usd": 0.4803349587817464,
+    "employment_years": 0.005599593208010158,
+    "num_late_payments_12m": 8.270302090406616,
+    "age": 0.007459123743867528,
+    "purpose": 0.18144528903306434,
+    "predicted_default_probability": 2.596027835223802
+  },
+  "status": {
+    "amount_usd": "WARNING",
+    "term_months": "OK",
+    "annual_income_usd": "CRITICAL",
+    "credit_score": "CRITICAL",
+    "existing_debt_usd": "CRITICAL",
+    "employment_years": "OK",
+    "num_late_payments_12m": "CRITICAL",
+    "age": "OK",
+    "purpose": "WARNING",
+    "predicted_default_probability": "CRITICAL"
+  },
+  "feature_alerts": [
+    "annual_income_usd",
+    "credit_score",
+    "existing_debt_usd",
+    "num_late_payments_12m"
+  ],
+  "dataset_alert": true,
+  "prediction_alert": true,
+  "any_alert": true,
+  "chart": "D:\\Techpreneur2.0\\week17\\loan-api\\artifacts\\drift_report.png",
+  "rationale": "Calibrated from the drift chart: stable features (age 0.0075, employment_years 0.0056, term_months 0.0014) stayed below PSI 0.01; moderate features (amount_usd 0.1321, purpose 0.1814) sat between 0.10 and 0.20; clearly shifted features (existing_debt_usd 0.4803, annual_income_usd 0.4888, credit_score 0.8288, num_late_payments_12m 8.2703) were at or above 0.48. Warning 0.10 sits above the stable cluster and below the moderate cluster; critical 0.25 sits above the moderate cluster and below the shifted cluster. A dataset alert fires when at least 3 features are at or above warning; prediction PSI uses the same 0.10/0.25 thresholds."
+}

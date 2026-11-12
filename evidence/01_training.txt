@@ -1,0 +1,347 @@
+python : 
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\data\dataset_source_registry.py:148: 
+UserWarning: The specified dataset source can be interpreted in multiple ways: LocalArtifactDatasetSource, 
+LocalArtifactDatasetSource. MLflow will assume that this is a LocalArtifactDatasetSource source.
+At line:1 char:139
++ ... AGENT_HINT="1"; python train_tracked.py --reset-registry 2>&1 | Tee-O ...
++                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\Bunhen...tSource source.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  return _dataset_source_registry.resolve(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/11/12 13:22:22 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using 
+CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code 
+during deserialization.Consider using a file path (str or Path) instead. See 
+https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/12 13:22:22 INFO mlflow.pyfunc: Validating input example against model signature
+Deleted existing registered model 'loan-default'.
+Training rows=6400 test rows=1600 default rate=0.239
+Tracking URI=http://127.0.0.1:5000 experiment=loan-default-experiments batch=20261112T062215Z
+
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 5983.32it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 1903.91it/s]
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 2366.54it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 2326.61it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 2324.49it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 2347.78it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 1653.81it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 739.96it/s] 
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 674.54it/s]
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\data\dataset_source_registry.py:148: 
+UserWarning: The specified dataset source can be interpreted in multiple ways: LocalArtifactDatasetSource, 
+LocalArtifactDatasetSource. MLflow will assume that this is a LocalArtifactDatasetSource source.
+  return _dataset_source_registry.resolve(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/11/12 13:22:37 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using 
+CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code 
+during deserialization.Consider using a file path (str or Path) instead. See 
+https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/12 13:22:37 INFO mlflow.pyfunc: Validating input example against model signature
+[1/8] logreg-baseline          recall=0.4386 precision=0.6292 auc=0.8191 score=0.5719 run=54e27f43aa974c5fa729d043f9bc3394
+≡ƒÅâ View run logreg-baseline at: http://127.0.0.1:5000/#/experiments/1/runs/54e27f43aa974c5fa729d043f9bc3394
+≡ƒº¬ View experiment at: http://127.0.0.1:5000/#/experiments/1
+
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 8848.74it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 6163.56it/s]
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 6207.65it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 6342.99it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 6490.72it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 6613.88it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 2278.63it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 1486.35it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 1390.17it/s]
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\data\dataset_source_registry.py:148: 
+UserWarning: The specified dataset source can be interpreted in multiple ways: LocalArtifactDatasetSource, 
+LocalArtifactDatasetSource. MLflow will assume that this is a LocalArtifactDatasetSource source.
+  return _dataset_source_registry.resolve(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/11/12 13:22:41 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using 
+CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code 
+during deserialization.Consider using a file path (str or Path) instead. See 
+https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/12 13:22:41 INFO mlflow.pyfunc: Validating input example against model signature
+[2/8] logreg-regularized       recall=0.7546 precision=0.4573 auc=0.8188 score=0.6782 run=d400758e6cbe4ed2a0b36d4b85fe32b8
+≡ƒÅâ View run logreg-regularized at: http://127.0.0.1:5000/#/experiments/1/runs/d400758e6cbe4ed2a0b36d4b85fe32b8
+≡ƒº¬ View experiment at: http://127.0.0.1:5000/#/experiments/1
+
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 221.37it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 281.00it/s]
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 275.75it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 339.09it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 396.94it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 359.83it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 239.58it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 204.72it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 200.68it/s]
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\data\dataset_source_registry.py:148: 
+UserWarning: The specified dataset source can be interpreted in multiple ways: LocalArtifactDatasetSource, 
+LocalArtifactDatasetSource. MLflow will assume that this is a LocalArtifactDatasetSource source.
+  return _dataset_source_registry.resolve(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/11/12 13:22:46 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using 
+CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code 
+during deserialization.Consider using a file path (str or Path) instead. See 
+https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/12 13:22:46 INFO mlflow.pyfunc: Validating input example against model signature
+[3/8] logreg-balanced          recall=0.7546 precision=0.4573 auc=0.8188 score=0.6782 run=a09970e6b164432a977ae9b699651db8
+≡ƒÅâ View run logreg-balanced at: http://127.0.0.1:5000/#/experiments/1/runs/a09970e6b164432a977ae9b699651db8
+≡ƒº¬ View experiment at: http://127.0.0.1:5000/#/experiments/1
+
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 9467.95it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 5660.33it/s]
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 4951.95it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 4742.01it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 592.83it/s] 
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 690.33it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 790.04it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 417.75it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 409.53it/s]
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\data\dataset_source_registry.py:148: 
+UserWarning: The specified dataset source can be interpreted in multiple ways: LocalArtifactDatasetSource, 
+LocalArtifactDatasetSource. MLflow will assume that this is a LocalArtifactDatasetSource source.
+  return _dataset_source_registry.resolve(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/11/12 13:22:53 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using 
+CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code 
+during deserialization.Consider using a file path (str or Path) instead. See 
+https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/12 13:22:53 INFO mlflow.pyfunc: Validating input example against model signature
+[4/8] random-forest-shallow    recall=0.7232 precision=0.4556 auc=0.8079 score=0.6599 run=a9bff6ebe65947babc72b73671e6af7e
+≡ƒÅâ View run random-forest-shallow at: http://127.0.0.1:5000/#/experiments/1/runs/a9bff6ebe65947babc72b73671e6af7e
+≡ƒº¬ View experiment at: http://127.0.0.1:5000/#/experiments/1
+
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 10699.76it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 796.64it/s]  
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 1091.79it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 1343.36it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 1508.63it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 1369.27it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 1309.43it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 262.71it/s] 
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 259.84it/s]
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\data\dataset_source_registry.py:148: 
+UserWarning: The specified dataset source can be interpreted in multiple ways: LocalArtifactDatasetSource, 
+LocalArtifactDatasetSource. MLflow will assume that this is a LocalArtifactDatasetSource source.
+  return _dataset_source_registry.resolve(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/11/12 13:23:04 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using 
+CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code 
+during deserialization.Consider using a file path (str or Path) instead. See 
+https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/12 13:23:04 INFO mlflow.pyfunc: Validating input example against model signature
+[5/8] random-forest-deep       recall=0.5979 precision=0.5545 auc=0.8041 score=0.6261 run=2035d66a40364cf980d195584cd44866
+≡ƒÅâ View run random-forest-deep at: http://127.0.0.1:5000/#/experiments/1/runs/2035d66a40364cf980d195584cd44866
+≡ƒº¬ View experiment at: http://127.0.0.1:5000/#/experiments/1
+
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 3104.59it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 3795.75it/s]
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 4439.98it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 4242.03it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 4295.68it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 4353.95it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 4535.78it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 1911.50it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 1406.01it/s]
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\data\dataset_source_registry.py:148: 
+UserWarning: The specified dataset source can be interpreted in multiple ways: LocalArtifactDatasetSource, 
+LocalArtifactDatasetSource. MLflow will assume that this is a LocalArtifactDatasetSource source.
+  return _dataset_source_registry.resolve(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/11/12 13:23:14 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using 
+CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code 
+during deserialization.Consider using a file path (str or Path) instead. See 
+https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/12 13:23:14 INFO mlflow.pyfunc: Validating input example against model signature
+[6/8] gradient-boosting        recall=0.4334 precision=0.6264 auc=0.8110 score=0.5668 run=dfc2c9a108914241be88817f38ec543f
+≡ƒÅâ View run gradient-boosting at: http://127.0.0.1:5000/#/experiments/1/runs/dfc2c9a108914241be88817f38ec543f
+≡ƒº¬ View experiment at: http://127.0.0.1:5000/#/experiments/1
+
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 10866.07it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 7163.63it/s] 
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 7252.40it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 7608.71it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 7895.90it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 8128.50it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 8293.82it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 1979.85it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 1871.41it/s]
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\data\dataset_source_registry.py:148: 
+UserWarning: The specified dataset source can be interpreted in multiple ways: LocalArtifactDatasetSource, 
+LocalArtifactDatasetSource. MLflow will assume that this is a LocalArtifactDatasetSource source.
+  return _dataset_source_registry.resolve(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+C:\Users\Bunheng\AppData\Local\Programs\Python\Python314\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: 
+Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your 
+input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement 
+error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training 
+dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever 
+these columns may have missing values. See `Handling Integers With Missing Values 
+<https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/11/12 13:23:19 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using 
+CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code 
+during deserialization.Consider using a file path (str or Path) instead. See 
+https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/12 13:23:19 INFO mlflow.pyfunc: Validating input example against model signature
+[7/8] hist-gradient-boosting   recall=0.6240 precision=0.4761 auc=0.7881 score=0.6124 run=9546b712ccc24d6fbf4d60b69a9b3caa
+≡ƒÅâ View run hist-gradient-boosting at: http://127.0.0.1:5000/#/experiments/1/runs/9546b712ccc24d6fbf4d60b69a9b3caa
+≡ƒº¬ View experiment at: http://127.0.0.1:5000/#/experiments/1
+
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 8867.45it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 5252.73it/s]
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 5033.16it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 4935.93it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 4980.18it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 762.88it/s] 
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 553.13it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 386.02it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 378.08it/s]
+Successfully registered model 'loan-default'.
+2026/11/12 13:23:21 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to 
+finish creation. Model name: loan-default, version 1
+Created version '1' of model 'loan-default'.
+Registered model 'loan-default' already exists. Creating a new version of this model...
+2026/11/12 13:23:22 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to 
+finish creation. Model name: loan-default, version 2
+Created version '2' of model 'loan-default'.
+[8/8] extra-trees              recall=0.6945 precision=0.4602 auc=0.8088 score=0.6471 run=e439269ee36d4a19adf28189a62add2a
+≡ƒÅâ View run extra-trees at: http://127.0.0.1:5000/#/experiments/1/runs/e439269ee36d4a19adf28189a62add2a
+≡ƒº¬ View experiment at: http://127.0.0.1:5000/#/experiments/1
+
+Leaderboard
+              run_name           model_family                           run_id   recall  precision       f1  roc_auc   pr_auc  accuracy  business_score  rank
+    logreg-regularized    logistic_regression d400758e6cbe4ed2a0b36d4b85fe32b8 0.754569   0.457278 0.569458 0.818818 0.611264  0.726875        0.678232     1
+       logreg-balanced    logistic_regression a09970e6b164432a977ae9b699651db8 0.754569   0.457278 0.569458 0.818796 0.611252  0.726875        0.678227     2
+ random-forest-shallow          random_forest a9bff6ebe65947babc72b73671e6af7e 0.723238   0.455592 0.559031 0.807866 0.586204  0.726875        0.659870     3
+           extra-trees            extra_trees e439269ee36d4a19adf28189a62add2a 0.694517   0.460208 0.553590 0.808833 0.589989  0.731875        0.647087     4
+    random-forest-deep          random_forest 2035d66a40364cf980d195584cd44866 0.597911   0.554479 0.575377 0.804090 0.573516  0.788750        0.626117     5
+hist-gradient-boosting hist_gradient_boosting 9546b712ccc24d6fbf4d60b69a9b3caa 0.624021   0.476096 0.540113 0.788050 0.573712  0.745625        0.612449     6
+       logreg-baseline    logistic_regression 54e27f43aa974c5fa729d043f9bc3394 0.438642   0.629213 0.516923 0.819090 0.611941  0.803750        0.571903     7
+     gradient-boosting      gradient_boosting dfc2c9a108914241be88817f38ec543f 0.433420   0.626415 0.512346 0.810976 0.598908  0.802500        0.566830     8
+
+Registered candidates
+  champion  -> loan-default v1 (logreg-regularized)
+  challenger-> loan-default v2 (random-forest-shallow)
+  model URI : models:/loan-default@champion
+  evidence  : D:\Techpreneur2.0\week17\loan-api\artifacts\selected_versions.json

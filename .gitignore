@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+mlruns/
+mlflow.db
+mlartifacts/
+logs/
+evidence/servers/*.pid
+.DS_Store
+Thumbs.db

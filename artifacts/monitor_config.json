@@ -1,0 +1,8 @@
+{
+  "warning_threshold": 0.1,
+  "critical_threshold": 0.25,
+  "prediction_warning_threshold": 0.1,
+  "prediction_critical_threshold": 0.25,
+  "minimum_features_over_warning_for_dataset_alert": 3,
+  "rationale": "Calibrated from the drift chart: stable features (age 0.0075, employment_years 0.0056, term_months 0.0014) stayed below PSI 0.01; moderate features (amount_usd 0.1321, purpose 0.1814) sat between 0.10 and 0.20; clearly shifted features (existing_debt_usd 0.4803, annual_income_usd 0.4888, credit_score 0.8288, num_late_payments_12m 8.2703) were at or above 0.48. Warning 0.10 sits above the stable cluster and below the moderate cluster; critical 0.25 sits above the moderate cluster and below the shifted cluster. A dataset alert fires when at least 3 features are at or above warning; prediction PSI uses the same 0.10/0.25 thresholds."
+}

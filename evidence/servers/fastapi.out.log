@@ -1,0 +1,6 @@
+Loaded models:/loan-default@champion -> version 1 (run d400758e6cbe4ed2a0b36d4b85fe32b8)
+INFO:     127.0.0.1:64546 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50189 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50192 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60436 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60437 - "POST /predict HTTP/1.1" 200 OK

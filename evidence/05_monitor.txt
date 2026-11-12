@@ -1,0 +1,57 @@
+python : 
+At line:1 char:139
++ ... "; $env:MLFLOW_DISABLE_AGENT_HINT="1"; python monitor.py 2>&1 | Tee-O ...
++                                            ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 12.50it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 14.47it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 14.47it/s]
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 14.47it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 14.47it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 14.47it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 14.47it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 25.88it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 25.88it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 25.88it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 25.32it/s]
+
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]
+Downloading artifacts:  12%|ΓûêΓûÄ        | 1/8 [00:00<00:00, 10180.35it/s]
+Downloading artifacts:  25%|ΓûêΓûêΓûî       | 2/8 [00:00<00:00, 48.99it/s]   
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 23.68it/s]
+Downloading artifacts:  38%|ΓûêΓûêΓûêΓûè      | 3/8 [00:00<00:00, 23.68it/s]
+Downloading artifacts:  50%|ΓûêΓûêΓûêΓûêΓûê     | 4/8 [00:00<00:00, 23.68it/s]
+Downloading artifacts:  62%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûÄ   | 5/8 [00:00<00:00, 23.68it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 22.53it/s]
+Downloading artifacts:  75%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî  | 6/8 [00:00<00:00, 22.53it/s]
+Downloading artifacts:  88%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûè | 7/8 [00:00<00:00, 22.53it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 22.53it/s]
+Downloading artifacts: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 8/8 [00:00<00:00, 25.63it/s]
+Reference rows : 6400
+Production rows: 1200 (production window CSV (production_window.csv))
+Champion       : models:/loan-default@champion
+Thresholds     : warning PSI >= 0.10, critical PSI >= 0.25
+
+PSI by feature
+  num_late_payments_12m              8.2703  CRITICAL
+  predicted_default_probability      2.5960  CRITICAL
+  credit_score                       0.8288  CRITICAL
+  annual_income_usd                  0.4888  CRITICAL
+  existing_debt_usd                  0.4803  CRITICAL
+  purpose                            0.1814  WARNING
+  amount_usd                         0.1321  WARNING
+  age                                0.0075  OK
+  employment_years                   0.0056  OK
+  term_months                        0.0014  OK
+
+Chart  : D:\Techpreneur2.0\week17\loan-api\artifacts\drift_report.png
+Report : D:\Techpreneur2.0\week17\loan-api\artifacts\drift_report.json
+
+ALERT: drift thresholds crossed.
+  Critical feature drift: annual_income_usd, credit_score, existing_debt_usd, num_late_payments_12m
+  Dataset alert: >= 3 features at/above warning.
+  Prediction PSI 2.5960 >= 0.25.
+  Recommended action: investigate the shifted features and retrain a challenger.

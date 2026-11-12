@@ -1,0 +1,22 @@
+Final training batch leaderboard
+================================
+
+ rank               run_name           model_family   recall  precision  roc_auc   pr_auc       f1  business_score                           run_id
+    1     logreg-regularized    logistic_regression 0.754569   0.457278 0.818818 0.611264 0.569458        0.678232 d400758e6cbe4ed2a0b36d4b85fe32b8
+    2        logreg-balanced    logistic_regression 0.754569   0.457278 0.818796 0.611252 0.569458        0.678227 a09970e6b164432a977ae9b699651db8
+    3  random-forest-shallow          random_forest 0.723238   0.455592 0.807866 0.586204 0.559031        0.659870 a9bff6ebe65947babc72b73671e6af7e
+    4            extra-trees            extra_trees 0.694517   0.460208 0.808833 0.589989 0.553590        0.647087 e439269ee36d4a19adf28189a62add2a
+    5     random-forest-deep          random_forest 0.597911   0.554479 0.804090 0.573516 0.575377        0.626117 2035d66a40364cf980d195584cd44866
+    6 hist-gradient-boosting hist_gradient_boosting 0.624021   0.476096 0.788050 0.573712 0.540113        0.612449 9546b712ccc24d6fbf4d60b69a9b3caa
+    7        logreg-baseline    logistic_regression 0.438642   0.629213 0.819090 0.611941 0.516923        0.571903 54e27f43aa974c5fa729d043f9bc3394
+    8      gradient-boosting      gradient_boosting 0.433420   0.626415 0.810976 0.598908 0.512346        0.566830 dfc2c9a108914241be88817f38ec543f
+
+Run links
+logreg-regularized: http://127.0.0.1:5000/#/experiments/1/runs/d400758e6cbe4ed2a0b36d4b85fe32b8
+logreg-balanced: http://127.0.0.1:5000/#/experiments/1/runs/a09970e6b164432a977ae9b699651db8
+random-forest-shallow: http://127.0.0.1:5000/#/experiments/1/runs/a9bff6ebe65947babc72b73671e6af7e
+extra-trees: http://127.0.0.1:5000/#/experiments/1/runs/e439269ee36d4a19adf28189a62add2a
+random-forest-deep: http://127.0.0.1:5000/#/experiments/1/runs/2035d66a40364cf980d195584cd44866
+hist-gradient-boosting: http://127.0.0.1:5000/#/experiments/1/runs/9546b712ccc24d6fbf4d60b69a9b3caa
+logreg-baseline: http://127.0.0.1:5000/#/experiments/1/runs/54e27f43aa974c5fa729d043f9bc3394
+gradient-boosting: http://127.0.0.1:5000/#/experiments/1/runs/dfc2c9a108914241be88817f38ec543f

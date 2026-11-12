@@ -1,0 +1,119 @@
+{
+  "health": {
+    "mlflow_scoring_server": {
+      "status_code": 200,
+      "body": ""
+    },
+    "fastapi": {
+      "status_code": 200,
+      "body": {
+        "status": "ok",
+        "model_name": "loan-default",
+        "alias": "champion",
+        "version": "1",
+        "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+        "model_loaded": true
+      }
+    }
+  },
+  "mlflow_valid_request": {
+    "request": {
+      "dataframe_split": {
+        "columns": [
+          "amount_usd",
+          "term_months",
+          "purpose",
+          "annual_income_usd",
+          "credit_score",
+          "existing_debt_usd",
+          "employment_years",
+          "num_late_payments_12m",
+          "age"
+        ],
+        "data": [
+          [
+            1500,
+            12,
+            "Buy a rice thresher",
+            9000.0,
+            640,
+            2500.0,
+            4.5,
+            1,
+            38
+          ]
+        ]
+      }
+    },
+    "status_code": 200,
+    "response": {
+      "predictions": [
+        {
+          "default_probability": 0.2534030951697195
+        }
+      ]
+    }
+  },
+  "mlflow_signature_rejection": {
+    "request": {
+      "dataframe_split": {
+        "columns": [
+          "amount_usd",
+          "term_months",
+          "purpose",
+          "annual_income_usd",
+          "existing_debt_usd",
+          "employment_years",
+          "num_late_payments_12m",
+          "age"
+        ],
+        "data": [
+          [
+            1500,
+            12,
+            "Buy a rice thresher",
+            9000.0,
+            2500.0,
+            4.5,
+            1,
+            38
+          ]
+        ]
+      }
+    },
+    "status_code": 400,
+    "response": {
+      "error_code": "INVALID_PARAMETER_VALUE",
+      "message": "Failed to predict data '   amount_usd  term_months  ... num_late_payments_12m  age\n0        1500           12  ...                     1   38\n\n[1 rows x 8 columns]'. \nError: Failed to enforce schema of data '   amount_usd  term_months  ... num_late_payments_12m  age\n0        1500           12  ...                     1   38\n\n[1 rows x 8 columns]' with schema '['amount_usd': long (required), 'term_months': long (required), 'purpose': string (required), 'annual_income_usd': double (required), 'credit_score': long (required), 'existing_debt_usd': double (required), 'employment_years': double (required), 'num_late_payments_12m': long (required), 'age': long (required)]'. Error: Model is missing inputs ['credit_score'].",
+      "sqlstate": "KAM01",
+      "error_class": "SCHEMA_ENFORCEMENT_FAILED"
+    }
+  },
+  "fastapi_prediction": {
+    "request": {
+      "amount_usd": 1500,
+      "term_months": 12,
+      "purpose": "Buy a rice thresher",
+      "annual_income_usd": 9000.0,
+      "credit_score": 640,
+      "existing_debt_usd": 2500.0,
+      "employment_years": 4.5,
+      "num_late_payments_12m": 1,
+      "age": 38
+    },
+    "status_code": 200,
+    "response": {
+      "default_probability": 0.2534030951697195,
+      "model_name": "loan-default",
+      "alias": "champion",
+      "version": "1",
+      "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8"
+    }
+  },
+  "parity": {
+    "mlflow_probability": 0.2534030951697195,
+    "fastapi_probability": 0.2534030951697195,
+    "absolute_difference": 0.0,
+    "same_probability": true
+  }
+}

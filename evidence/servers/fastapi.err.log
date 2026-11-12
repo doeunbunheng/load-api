@@ -1,0 +1,5 @@
+INFO:     Started server process [20344]
+INFO:     Waiting for application startup.
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]Downloading artifacts:  12%|█▎        | 1/8 [00:00<00:00, 28.86it/s]Downloading artifacts:  25%|██▌       | 2/8 [00:00<00:00, 31.41it/s]Downloading artifacts:  38%|███▊      | 3/8 [00:00<00:00, 31.39it/s]Downloading artifacts:  50%|█████     | 4/8 [00:00<00:00, 29.36it/s]Downloading artifacts:  50%|█████     | 4/8 [00:00<00:00, 29.36it/s]Downloading artifacts:  62%|██████▎   | 5/8 [00:00<00:00, 29.36it/s]Downloading artifacts:  75%|███████▌  | 6/8 [00:00<00:00, 29.36it/s]Downloading artifacts:  88%|████████▊ | 7/8 [00:00<00:00, 29.36it/s]Downloading artifacts: 100%|██████████| 8/8 [00:00<00:00, 33.46it/s]Downloading artifacts: 100%|██████████| 8/8 [00:00<00:00, 33.46it/s]Downloading artifacts: 100%|██████████| 8/8 [00:00<00:00, 32.63it/s]
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)

@@ -1,0 +1,22 @@
+INFO:     Started server process [10928]
+INFO:     Waiting for application startup.
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]Downloading artifacts:  12%|█▎        | 1/8 [00:00<00:00, 31.55it/s]Downloading artifacts:  25%|██▌       | 2/8 [00:00<00:00, 52.54it/s]Downloading artifacts:  38%|███▊      | 3/8 [00:00<00:00, 63.57it/s]Downloading artifacts:  50%|█████     | 4/8 [00:00<00:00, 79.67it/s]Downloading artifacts:  62%|██████▎   | 5/8 [00:00<00:00, 88.44it/s]Downloading artifacts:  75%|███████▌  | 6/8 [00:00<00:00, 77.92it/s]Downloading artifacts:  88%|████████▊ | 7/8 [00:00<00:00, 82.56it/s]Downloading artifacts: 100%|██████████| 8/8 [00:00<00:00, 37.02it/s]Downloading artifacts: 100%|██████████| 8/8 [00:00<00:00, 37.02it/s]Downloading artifacts: 100%|██████████| 8/8 [00:00<00:00, 36.93it/s]
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+Loaded models:/loan-default@champion -> version 2 (run a9bff6ebe65947babc72b73671e6af7e)
+INFO:     127.0.0.1:60448 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60450 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60452 - "POST /predict HTTP/1.1" 200 OK
+INFO:     Started server process [2812]
+INFO:     Waiting for application startup.
+Downloading artifacts:   0%|          | 0/8 [00:00<?, ?it/s]Downloading artifacts:  12%|█▎        | 1/8 [00:00<00:00, 18724.57it/s]Downloading artifacts:  25%|██▌       | 2/8 [00:00<00:00, 212.61it/s]  Downloading artifacts:  38%|███▊      | 3/8 [00:00<00:00, 216.31it/s]Downloading artifacts:  50%|█████     | 4/8 [00:00<00:00, 171.76it/s]Downloading artifacts:  62%|██████▎   | 5/8 [00:00<00:00, 161.14it/s]Downloading artifacts:  75%|███████▌  | 6/8 [00:00<00:00, 158.09it/s]Downloading artifacts:  88%|████████▊ | 7/8 [00:00<00:00, 159.24it/s]Downloading artifacts: 100%|██████████| 8/8 [00:00<00:00, 160.50it/s]Downloading artifacts: 100%|██████████| 8/8 [00:00<00:00, 160.13it/s]
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+Loaded models:/loan-default@champion -> version 1 (run d400758e6cbe4ed2a0b36d4b85fe32b8)
+INFO:     127.0.0.1:63771 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63773 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63774 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52581 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64883 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64886 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60746 - "GET /health HTTP/1.1" 200 OK

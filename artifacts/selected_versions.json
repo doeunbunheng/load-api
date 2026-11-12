@@ -1,0 +1,54 @@
+{
+  "batch_id": "20261112T062215Z",
+  "tracking_uri": "http://127.0.0.1:5000",
+  "experiment": "loan-default-experiments",
+  "experiment_id": "1",
+  "registered_model": "loan-default",
+  "selection_rule": "Best run per model family by business_score = 0.5*recall + 0.3*precision + 0.2*roc_auc; the top two families become champion and challenger.",
+  "champion": {
+    "alias": "champion",
+    "version": "1",
+    "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+    "run_name": "logreg-regularized",
+    "family": "logistic_regression",
+    "metrics": {
+      "accuracy": 0.726875,
+      "precision": 0.4572784810126582,
+      "recall": 0.7545691906005222,
+      "f1": 0.5694581280788177,
+      "roc_auc": 0.818817835236671,
+      "pr_auc": 0.611263978998408
+    },
+    "business_score": 0.6782317066513928,
+    "description": "Champion: logreg-regularized (logistic_regression). Recall=0.7546, precision=0.4573, ROC-AUC=0.8188, PR-AUC=0.6113. Trained on 6400 applications (batch 20261112T062215Z); MLflow run d400758e6cbe4ed2a0b36d4b85fe32b8.",
+    "model_uri": "models:/loan-default@champion"
+  },
+  "challenger": {
+    "alias": "challenger",
+    "version": "2",
+    "run_id": "a9bff6ebe65947babc72b73671e6af7e",
+    "run_name": "random-forest-shallow",
+    "family": "random_forest",
+    "metrics": {
+      "accuracy": 0.726875,
+      "precision": 0.4555921052631579,
+      "recall": 0.7232375979112271,
+      "f1": 0.5590312815338042,
+      "roc_auc": 0.8078655084303954,
+      "pr_auc": 0.5862040115428567
+    },
+    "business_score": 0.65986953222064,
+    "description": "Challenger: random-forest-shallow (random_forest). Recall=0.7232, precision=0.4556, ROC-AUC=0.8079, PR-AUC=0.5862. Trained on 6400 applications (batch 20261112T062215Z); MLflow run a9bff6ebe65947babc72b73671e6af7e.",
+    "model_uri": "models:/loan-default@challenger"
+  },
+  "run_links": {
+    "logreg-baseline": "http://127.0.0.1:5000/#/experiments/1/runs/54e27f43aa974c5fa729d043f9bc3394",
+    "logreg-regularized": "http://127.0.0.1:5000/#/experiments/1/runs/d400758e6cbe4ed2a0b36d4b85fe32b8",
+    "logreg-balanced": "http://127.0.0.1:5000/#/experiments/1/runs/a09970e6b164432a977ae9b699651db8",
+    "random-forest-shallow": "http://127.0.0.1:5000/#/experiments/1/runs/a9bff6ebe65947babc72b73671e6af7e",
+    "random-forest-deep": "http://127.0.0.1:5000/#/experiments/1/runs/2035d66a40364cf980d195584cd44866",
+    "gradient-boosting": "http://127.0.0.1:5000/#/experiments/1/runs/dfc2c9a108914241be88817f38ec543f",
+    "hist-gradient-boosting": "http://127.0.0.1:5000/#/experiments/1/runs/9546b712ccc24d6fbf4d60b69a9b3caa",
+    "extra-trees": "http://127.0.0.1:5000/#/experiments/1/runs/e439269ee36d4a19adf28189a62add2a"
+  }
+}

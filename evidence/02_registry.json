@@ -1,0 +1,66 @@
+{
+  "registered_model": "loan-default",
+  "registered_model_description": "",
+  "versions": [
+    {
+      "version": "1",
+      "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+      "status": "READY",
+      "description": "Champion: logreg-regularized (logistic_regression). Recall=0.7546, precision=0.4573, ROC-AUC=0.8188, PR-AUC=0.6113. Trained on 6400 applications (batch 20261112T062215Z); MLflow run d400758e6cbe4ed2a0b36d4b85fe32b8.",
+      "tags": {
+        "role": "champion",
+        "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+        "model_family": "logistic_regression",
+        "business_score": "0.6782",
+        "batch_id": "20261112T062215Z"
+      },
+      "aliases": [
+        "champion"
+      ]
+    },
+    {
+      "version": "2",
+      "run_id": "a9bff6ebe65947babc72b73671e6af7e",
+      "status": "READY",
+      "description": "Challenger: random-forest-shallow (random_forest). Recall=0.7232, precision=0.4556, ROC-AUC=0.8079, PR-AUC=0.5862. Trained on 6400 applications (batch 20261112T062215Z); MLflow run a9bff6ebe65947babc72b73671e6af7e.",
+      "tags": {
+        "role": "challenger",
+        "run_id": "a9bff6ebe65947babc72b73671e6af7e",
+        "model_family": "random_forest",
+        "business_score": "0.6599",
+        "batch_id": "20261112T062215Z"
+      },
+      "aliases": [
+        "challenger"
+      ]
+    }
+  ],
+  "aliases": {
+    "champion": {
+      "version": "1",
+      "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+      "description": "Champion: logreg-regularized (logistic_regression). Recall=0.7546, precision=0.4573, ROC-AUC=0.8188, PR-AUC=0.6113. Trained on 6400 applications (batch 20261112T062215Z); MLflow run d400758e6cbe4ed2a0b36d4b85fe32b8.",
+      "tags": {
+        "role": "champion",
+        "run_id": "d400758e6cbe4ed2a0b36d4b85fe32b8",
+        "model_family": "logistic_regression",
+        "business_score": "0.6782",
+        "batch_id": "20261112T062215Z"
+      }
+    },
+    "challenger": {
+      "version": "2",
+      "run_id": "a9bff6ebe65947babc72b73671e6af7e",
+      "description": "Challenger: random-forest-shallow (random_forest). Recall=0.7232, precision=0.4556, ROC-AUC=0.8079, PR-AUC=0.5862. Trained on 6400 applications (batch 20261112T062215Z); MLflow run a9bff6ebe65947babc72b73671e6af7e.",
+      "tags": {
+        "role": "challenger",
+        "run_id": "a9bff6ebe65947babc72b73671e6af7e",
+        "model_family": "random_forest",
+        "business_score": "0.6599",
+        "batch_id": "20261112T062215Z"
+      }
+    }
+  },
+  "descriptions_present": true,
+  "aliases_distinct": true
+}

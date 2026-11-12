@@ -1,0 +1,21 @@
+﻿Three programs started for Hands-on 1
+======================================
+MLflow tracking server  http://127.0.0.1:5000  status=200 body=OK
+MLflow scoring server   http://127.0.0.1:5001  status=200 body=
+FastAPI                 http://127.0.0.1:8000  status=200 body={"status":"ok","model_name":"loan-default","alias":"champion","version":"1","run_id":"d400758e6cbe4ed2a0b36d4b85fe32b8","model_loaded":true}
+
+Process IDs
+-----------
+Tracking server pid file : 17032
+Scoring server pid file  : 9308
+FastAPI pid file         : 2812
+
+Listening sockets (best effort)
+-------------------------------
+127.0.0.1:5000 pid=5404
+127.0.0.1:8000 pid=2812 (Get-NetTCPConnection)
+
+Note: Windows netstat/Get-NetTCPConnection did not consistently expose the
+5001 listener from this shell, but the /health endpoint returned 200 and the
+integration test on port 5001 completed successfully. The HTTP health checks
+and evidence/04_integration.json are the authoritative serving evidence.
